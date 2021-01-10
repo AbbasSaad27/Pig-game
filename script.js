@@ -88,13 +88,13 @@ const addEvent = function() {
 addEvent();
 
 btnNew.addEventListener(`click`, function(){
+    switchPlayer();
     currentScore = 0;
     score0 = 0;
     score1 = 0;
     score0El.textContent = 0;
     score1El.textContent = 0;
     diceEl.classList.add(`hidden`);
-    switchPlayer();
     if(player0.classList.contains(`player--winner`)){
         removeWinner(player0);
         addEvent();
