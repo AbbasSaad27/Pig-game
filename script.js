@@ -88,6 +88,7 @@ const addEvent = function() {
 addEvent();
 
 btnNew.addEventListener(`click`, function(){
+    currentScore = 0;
     score0 = 0;
     score1 = 0;
     score0El.textContent = 0;
